@@ -71,11 +71,20 @@ For each record, it is provided:
   - ./UCI HAR Dataset/test/Inertial Signals/
 
   Files for total acceleration (from the accelerometer):
-	|--------------------------+---------------------------|
-	| total_acc_x_train.txt    |	total_acc_x_test.txt   |
-	| total_acc_y_train.txt	   |	total_acc_y_test.txt   |
-	| total_acc_z_train.txt	   |	total_acc_z_test.txt   |
-	|--------------------------+---------------------------|
+<table>
+	<tr>
+		<td>total_acc_x_train.txt</td>
+		<td>total_acc_x_test.txt</td>
+	</tr>
+	<tr>
+		<td>total_acc_y_train.txt</td>
+		<td>total_acc_y_test.txt</td>
+	</tr>
+	<tr>
+		<td>total_acc_z_train.txt</td>
+		<td>total_acc_z_test.txt</td>
+	</tr>
+</table>
 
   Files for estimated body acceleration (from the accelerometer):
 	|--------------------------+---------------------------|
