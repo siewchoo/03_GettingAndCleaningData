@@ -9,27 +9,29 @@ Codebook prepared by TSC based on data set she downloaded at the following URL:
 	https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
 
 The downloaded 'UCI HAR Dataset.zip' file when unzipped contains:
-1) 1 folder for the training data
-2) 1 folder for the test data
-3) 3 text files 
+
+1. 1 folder for the training data
+2. 1 folder for the test data
+3. 3 text files 
 	a) features.txt
 	b) features_info.txt 
 	c) README.txt
 
 Disclaimer:
 The above dataset is distributed AS-IS and no responsibility implied or explicit can be addressed to the authors or their institutions for its use or misuse. Any commercial use is prohibited.
-==================================================================
+\==================================================================
 Jorge L. Reyes-Ortiz, Davide Anguita, Alessandro Ghio, Luca Oneto.
 Smartlab - Non Linear Complex Systems Laboratory
 DITEN - Università degli Studi di Genova.
 Via Opera Pia 11A, I-16145, Genoa, Italy.
 activityrecognition@smartlab.ws
 www.smartlab.ws
-==================================================================
+\==================================================================
 
 
 ###Data Collection Description
 Summary
+-------
 One of the most exciting areas in all of data science right now is wearable computing. 
 Companies like Fitbit, Nike, and Jawbone Up are racing to develop the most advanced algorithms to attract new users. 
 
@@ -59,8 +61,8 @@ From each window, a vector of features was obtained by calculating variables fro
 See 'features_info.txt' for more details. 
 
 For each record, it is provided:
-===============================
-- Triaxial acceleration from the accelerometer (total acceleration) and the estimated body acceleration.
+
+1. Triaxial acceleration from the accelerometer (total acceleration) and the estimated body acceleration.
   Depending on whether the data was collected as part of training or testing, the data files are either in
   - ./UCI HAR Dataset/train/Inertial Signals/
   - ./UCI HAR Dataset/test/Inertial Signals/
@@ -75,7 +77,7 @@ For each record, it is provided:
 	body_acc_y_train.txt		body_acc_y_test.txt
 	body_acc_z_train.txt		body_acc_z_test.txt
 
-- Triaxial Angular velocity from the gyroscope. 
+2.- Triaxial Angular velocity from the gyroscope. 
   Depending on whether the data was collected as part of training or testing, the data files are either in
   - ./UCI HAR Dataset/train/Inertial Signals/
   - ./UCI HAR Dataset/test/Inertial Signals/
@@ -85,27 +87,27 @@ For each record, it is provided:
 	body_gyro_y_train.txt		body_gyro_y_test.txt
 	body_gyro_z_train.txt		body_gyro_z_test.txt
 
-- A 561-feature vector with time and frequency domain variables.
+3. A 561-feature vector with time and frequency domain variables.
   See Part 3a) Training Data and
       Part 4a) Test Data  
 
-- Its activity label.
+4. Its activity label.
   See Part 3b) Training Activities and
       Part 4b) Test Activities
 
-- An identifier of the subject who carried out the experiment.
+5. An identifier of the subject who carried out the experiment.
   See Part 3c) Training Subjects and 
       Part 4c) Test Subjects.
 
 
-Part 1:	Activities
+'Part 1: Activities'
 	- List the activities measured in the experiment.
 	Location: ./UCI HAR Dataset
 File: activity_labels.txt
 Observations: 6
 Variables: 2
 
-Part 2:	Features
+'Part 2: Features'
 	- List of all features measured in the experiment.
 	Location: ./UCI HAR Dataset
 File: features.txt
@@ -113,7 +115,7 @@ File: features.txt
 Obervations: 561
 Variables: 2
 
-Part 3: Training Data
+'Part 3: Training Data'
 	- A collection of text files containing data collected during a training session.
 	Location: ./UCI HAR Dataset/train
 a) Training Data
@@ -137,7 +139,7 @@ c) Training Subjects
    Obervations: 7352
    Variables: 1
 
-Part 4: Test Data
+'Part 4: Test Data'
 	- A collection of text files containing data collected during a test run.
 	Location: ./UCI HAR Dataset/test
 a) Test Data
@@ -161,7 +163,7 @@ c) Test Subjects
    Obervations: 2947
    Variables: 1
 
-Part 5: Miscellaneous Information
+'Part 5: Miscellaneous Information'
 	Other supporting information regarding the nature and use of files and fields.
 Files: README.txt
        - Information presented here are derived from this file.
@@ -169,8 +171,8 @@ Files: README.txt
        - Accompanying information regarding the features measured in the project.
 
 Codebook for Activities
-| Variable Name		| Position	| Values			| Description
-|=======================|===============|===============================|===============================|
+| Variable Name		| Position	| Values			| Description			|
+|-----------------------|---------------|-------------------------------|-------------------------------|
 | id			| 1		| 1 - 6				| ID of activity measured	|
 |			|		| 1 = WALKING			|				|
 |			|		| 2 = WALKING_UPSTAIRS		|				|
@@ -185,20 +187,20 @@ Codebook for Activities
 |			|		| SITTING			|				|
 |			|		| STANDING			|				|
 |			|		| LAYING			|				|
-|=======================|===============|===============================|===============================|
+|-----------------------|---------------|-------------------------------|-------------------------------|
 
 
 Codebook for Features
 | Variable Name		| Position	| Values			| Description			|
-|=======================|===============|===============================|===============================|
+|-----------------------|---------------|-------------------------------|-------------------------------|
 | id			| 1		| 1 - 561			| ID of the feature measured	|
-|			|		|				|				|
+|-----------------------|---------------|-------------------------------|-------------------------------||			|		|				|				|
 | feature		| 2		| tBodyAcc-mean()-X		| Name of the feature measured	|
 |			|		| tBodyGyroJerk-mean()-X	| * See 'features.txt' 		|
 |			|		| fBodyAcc-std()-X		|   for complete list of values	|
 |			|		| angle(Z,gravityMean)		|				|
 |			|		| ..list truncated		|				|
-|=========================================================================================================
+|-----------------------|---------------|-------------------------------|-------------------------------|
 Notes: 
 ======
 - Features are normalized and bounded within [-1,1].
@@ -219,11 +221,6 @@ subjectId		1		1 - 30			ID of the subject performing the activity
 
 Codebook for Test Data Files
 a) Test Data
-Variable Name		Position	Values			Description
-V1 - V561		1		Numeric 		Readings off the instruments - Accelerometer, Gyroscope
-
-
-
 | Variable Name | Position | Values  | Description                                           |
 |---------------|----------|---------|-------------------------------------------------------|
 | V1 - V561     | 1        | Numeric | Readings off the instruments Accelerometer, Gyroscope |
@@ -231,23 +228,18 @@ V1 - V561		1		Numeric 		Readings off the instruments - Accelerometer, Gyroscope
 
 
 b) Test Activities
-activityId		1		1 - 6			ID of the activity measured
+| Variable Name | Position | Values  | Description                                           |
+|---------------|----------|---------|-------------------------------------------------------|
+| activityId	| 1	   | 1 - 6   | ID of the activity measured			     |
+|               |          |         |                                                       |
 
 c) Test Subjects
-subjectId		1		1 - 30			ID of the subject performing the activity
+| Variable Name | Position | Values  | Description                                           |
+|---------------|----------|---------|-------------------------------------------------------|
+| subjectId	| 1	   | 1 - 30  | ID of the subject performing the activity	     |
+|               |          |         |                                                       |
 
-					
-
-
-
-
-
-
-
-
-
-
-
+				
 
 The following files are available for the train and test data. Their descriptions are equivalent. 
 
