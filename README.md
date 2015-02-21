@@ -1,2 +1,2 @@
-# 03_Getting_and_Cleaning_Data
+# 03_GettingAndCleaningData
 Repo for all the work done for 'Module 3 - Getting and Cleaning Data' 
