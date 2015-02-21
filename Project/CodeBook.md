@@ -13,9 +13,10 @@ The downloaded 'UCI HAR Dataset.zip' file when unzipped contains:
 1. 1 folder for the training data
 2. 1 folder for the test data
 3. 3 text files 
-	a) features.txt
-	b) features_info.txt 
-	c) README.txt
+
+	a. features.txt
+	b. features_info.txt 
+	c. README.txt
 
 Disclaimer:
 The above dataset is distributed AS-IS and no responsibility implied or explicit can be addressed to the authors or their institutions for its use or misuse. Any commercial use is prohibited.
@@ -43,7 +44,9 @@ A full description is available at the site where the data was obtained:
 
 Additional reference material for the experiment: 
 
-	Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012
+	Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. 
+	Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. 
+	International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012
 
 
 ###The Data Set
