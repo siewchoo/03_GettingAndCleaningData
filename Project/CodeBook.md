@@ -87,11 +87,21 @@ For each record, it is provided:
 </table>
 
   Files for estimated body acceleration (from the accelerometer):
-	|--------------------------+---------------------------|
-	| body_acc_x_train.txt     |	body_acc_x_test.txt    |
-	| body_acc_y_train.txt	   |	body_acc_y_test.txt    |
-	| body_acc_z_train.txt	   |	body_acc_z_test.txt    |
-	|--------------------------+---------------------------|
+<table>
+	<tr>
+		<td>body_acc_x_train.txt</td>
+		<td>body_acc_x_test.txt</td>
+	</tr>
+	<tr>
+		<td>body_acc_y_train.txt</td>
+		<td>body_acc_y_test.txt</td>
+	</tr>
+	<tr>
+		<td>body_acc_z_train.txt</td>
+		<td>body_acc_z_test.txt</td>
+	</tr>
+<table>
+
 
 2. Triaxial Angular velocity from the gyroscope. 
   Depending on whether the data was collected as part of training or testing, the data files are either in
@@ -99,22 +109,32 @@ For each record, it is provided:
   - ./UCI HAR Dataset/test/Inertial Signals/
 
   Files for angular velocity (from the gyroscope):
-	|--------------------------+---------------------------|
-	| body_gyro_x_train.txt	   |	body_gyro_x_test.txt   |
-	| body_gyro_y_train.txt	   |	body_gyro_y_test.txt   |
-	| body_gyro_z_train.txt	   |	body_gyro_z_test.txt   |
-	|--------------------------+---------------------------|
+<table>
+	<tr>
+		<td>body_gyro_x_train.txt</td>
+		<td>body_gyro_x_test.txt</td>
+	</tr>
+	<tr>
+		<td>body_gyro_y_train.txt</td>
+		<td>body_gyro_y_test.txt</td>
+	</tr>
+	<tr>
+		<td>body_gyro_z_train.txt</td>
+		<td>body_gyro_z_test.txt</td>
+	</tr>
+</table>
+
 
 3. A 561-feature vector with time and frequency domain variables.
-  See Part 3a) Training Data and
+  - See Part 3a) Training Data and
       Part 4a) Test Data  
 
 4. Its activity label.
-  See Part 3b) Training Activities and
+  - See Part 3b) Training Activities and
       Part 4b) Test Activities
 
 5. An identifier of the subject who carried out the experiment.
-  See Part 3c) Training Subjects and 
+  - See Part 3c) Training Subjects and 
       Part 4c) Test Subjects.
 
 
@@ -125,17 +145,43 @@ File: activity_labels.txt
 Observations: 6
 Variables: 2
 
-'Part 2: Features'
-	- List of all features measured in the experiment.
-	Location: ./UCI HAR Dataset
-File: features.txt
-      (features_info.txt provides more details)
-Obervations: 561
-Variables: 2
+<table>
+	<tr>
+		<td colspan='2'>Part 2: Features</td>
+	<tr>
+	<tr>
+		<td colspan='2'>- List of all features measured in the experiment.</td>
+	<tr>
+	<tr>
+		<td>Location:</td>
+		<td>./UCI HAR Dataset</td>
+	<tr>
+	<tr>
+		<td>File:</td>
+		<td>features.txt<br/>(features_info.txt provides more details)</td>
+	<tr>
+	<tr>
+		<td>Obervations:</td>
+		<td>561</td>
+	<tr>
+	<tr>
+		<td>Variables:</td>
+		<td>2</td>
+</table>
 
-'Part 3: Training Data'
-	- A collection of text files containing data collected during a training session.
-	Location: ./UCI HAR Dataset/train
+<table>
+	<tr>
+		<td colspan='2'>Part 3: Training Data</td>
+	</tr>
+	<tr>
+		<td colspan='2'>- A collection of text files containing data collected during a training session.</td>
+	</tr>
+	<tr>
+		<td>Location:</td>
+		<td>./UCI HAR Dataset/train</td>
+	</tr>
+<table>
+
 a) Training Data
    File: X_train.txt
 	 Contains measurement values for all features measured during training.
