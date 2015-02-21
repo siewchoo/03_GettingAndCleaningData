@@ -208,7 +208,7 @@ Notes:
 Codebook for Training Data Files
 a) Training Data
 Variable Name		Position	Values			Description
-V1 - V561		1		Numeric 		Readings off the instruments - Accelerometer, Gyroscope
+V1 - V561		1		Numeric 		
 
 b) Training Activities
 activityId		1		1 - 6			ID of the activity measured
@@ -221,6 +221,14 @@ Codebook for Test Data Files
 a) Test Data
 Variable Name		Position	Values			Description
 V1 - V561		1		Numeric 		Readings off the instruments - Accelerometer, Gyroscope
+
+
+
+| Variable Name | Position | Values  | Description                                           |
+|---------------|----------|---------|-------------------------------------------------------|
+| V1 - V561     | 1        | Numeric | Readings off the instruments Accelerometer, Gyroscope |
+|               |          |         |                                                       |
+
 
 b) Test Activities
 activityId		1		1 - 6			ID of the activity measured
