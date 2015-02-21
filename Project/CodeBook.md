@@ -13,10 +13,9 @@ The downloaded 'UCI HAR Dataset.zip' file when unzipped contains:
 1. 1 folder for the training data
 2. 1 folder for the test data
 3. 3 text files 
-
-	a. features.txt
-	b. features_info.txt 
-	c. README.txt
+	a) features.txt
+	b) features_info.txt 
+	c) README.txt
 
 Disclaimer:
 The above dataset is distributed AS-IS and no responsibility implied or explicit can be addressed to the authors or their institutions for its use or misuse. Any commercial use is prohibited.
@@ -30,7 +29,8 @@ www.smartlab.ws
 \==================================================================
 
 
-###Data Collection Description
+Data Collection Description
+===========================
 Summary
 -------
 One of the most exciting areas in all of data science right now is wearable computing. 
@@ -138,10 +138,10 @@ For each record, it is provided:
       Part 4c) Test Subjects.
 
 
+Part 1: Activities
 <table>
 	<tr>
-		<td colspan='2'>Part 1: Activities<br/>
-		- List the activities measured in the experiment.</td>
+		<td colspan='2'>- List the activities measured in the experiment.</td>
 	</tr>
 	<tr>
 		<td>Location:</td>
@@ -160,10 +160,11 @@ For each record, it is provided:
 	</tr>
 </table>
 
+
+Part 2: Features
 <table>
 	<tr>
-		<td colspan='2'>Part 2: Features<br/>
-		- List of all features measured in the experiment.</td>
+		<td colspan='2'>- List of all features measured in the experiment.</td>
 	</tr>
 	<tr>
 		<td>Location:</td>
@@ -183,41 +184,50 @@ For each record, it is provided:
 	</tr>
 </table>
 
+
+Part 3: Training Data
 <table>
 	<tr>
-		<td colspan='2'>Part 3: Training Data<br/>
-		- A collection of text files containing data collected during a training session.</td>
+		<td colspan='3'>- A collection of text files containing data collected during a training session.</td>
 	</tr>
 	<tr>
-		<td>Location:</td>
+		<td colspan='2'>Location:</td>
 		<td>./UCI HAR Dataset/train</td>
 	</tr>
 	<tr>
-		<td colspan='2'>a) Training Data</td>
+		<td>a)</td>
+		<td colspan='2'>Training Data</td>
 	</tr>
 	<tr>
+		<td></td>
 		<td>File:</td>
 		<td>X_train.txt</td>
 	</tr>
 	<tr>
+		<td></td>
 		<td colspan='2'>Contains measurement values for all features measured during training.<br/>
 		Each row represents a measurement taken of all features measured during training.</td>
    	<tr>
+		<td></td>
 		<td>Observations:</td>
 		<td>7352</td>
 	</tr>
 	<tr>
+		<td></td>
 		<td>Variables:</td>
 		<td>561</td>
 	</tr>
 	<tr>
-		<td colspan='2'>b) Training Activities</td>
+		<td>b)</td>
+		<td colspan='2'>Training Activities</td>
 	</tr>
 	<tr>
+		<td></td>
 		<td>File:</td>
 		<td>y_train.txt</td>
 	</tr>
 	<tr>
+		<td></td>
 		<td colspan='2'>Contains activity IDs of the activities measured during the training.<br/>
 		Each row identifies the activity performed for each training window sample.</td>
    	<tr>
@@ -225,24 +235,30 @@ For each record, it is provided:
 		<td>7352</td>
 	</tr>
 	<tr>
+		<td></td>
 		<td>Variables:</td>
 		<td>1</td>
 	</tr>
 	<tr>
+		<td></td>
 		<td colspan='2'>b) Training Subjects</td>
 	</tr>
 	<tr>
+		<td></td>
 		<td>File:</td>
 		<td>subject_train.txt</td>
 	</tr>
 	<tr>
+		<td></td>
 		<td colspan='2'>Contains IDs of the training subjects.<br/>
 		Each row identifies the subject who performed the activity for each training window sample.</td>
    	<tr>
+		<td></td>
 		<td>Observations:</td>
 		<td>7352</td>
 	</tr>
 	<tr>
+		<td></td>
 		<td>Variables:</td>
 		<td>1</td>
 	</tr>
@@ -250,35 +266,110 @@ For each record, it is provided:
 
 
 Part 4: Test Data
-	- A collection of text files containing data collected during a test run.
-	Location: ./UCI HAR Dataset/test
-a) Test Data
-   File: X_test.txt
-	 Contains measurement values for all features measured during the test run.
-	 Each row represents a measurement taken of all features measured during the test run.
-   Observations: 2947
-   Variables: 561
+<table>
+	<tr>
+		<td colspan='3'>- A collection of text files containing data collected during a test run.
+	</tr>
+	<tr>
+		<td colspan='2'>Location:</td>
+		<td>./UCI HAR Dataset/test</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>a)<td>
+		<td>Test Data</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>File:</td>
+		<td>X_test.txt</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td>Contains measurement values for all features measured during the test run.<br/>
+		Each row represents a measurement taken of all features measured during the test run.</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>Observations:</td>
+		<td>2947</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>Variables:</td>
+		<td>561</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>b)</td>
+		<td>Test Activities</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>File:</td>
+		<td>y_test.txt</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>Contains activity IDs of the activities measured during the test run.<br/>
+	 	Each row identifies the activity performed for each test window sample.</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>Observations:</td>
+		<td>2947</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>Variables:</td>
+		<td>1</td>
+	</tr>
+	<tr>
+		<td>c)</td>
+		<td colspan='2'>Test Subjects</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>File:</td>
+		<td>subject_test.txt</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td colspan='2'>Contains IDs of the training subjects.<br/>
+		 Each row identifies the subject who performed the activity for each test window sample.</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>Observations:</td>
+		<td>2947</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>Variables:</td>
+		<td>1</td>
+	</tr>
+<table>
 
-b) Test Activities
-   File: y_test.txt
-	 Contains activity IDs of the activities measured during the test run.
-	 Each row identifies the activity performed for each test window sample.
-   Observations: 2947
-   Variables: 1
 
-c) Test Subjects
-   File: subject_test.txt
-	 Contains IDs of the training subjects.
-	 Each row identifies the subject who performed the activity for each test window sample.
-   Observations: 2947
-   Variables: 1
-
-'Part 5: Miscellaneous Information'
-	Other supporting information regarding the nature and use of files and fields.
-Files: README.txt
-       - Information presented here are derived from this file.
-       features_info.txt
-       - Accompanying information regarding the features measured in the project.
+Part 5: Miscellaneous Information
+<table>
+	<tr>
+		<td colspan='2'>Other supporting information regarding the nature and use of files and fields.</td>
+	</tr>
+	<tr>
+		<td>Files:</td>
+		<td>README.txt</td>
+	</tr>
+	<tr>
+		<td colspan='2'>- Information presented here are derived from this file.</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>features_info.txt</td>
+	</tr>
+		<td colspan='2'>- Accompanying information regarding the features measured in the project.</td>
+	</tr>
 
 Codebook for Activities
 <table>
@@ -289,8 +380,8 @@ Codebook for Activities
 		<td>Description</td>
 	</tr>
 	<tr>
-		<td>id</td>
-		<td>1</td>
+		<td valign='top'>id</td>
+		<td valign='top'>1</td>
 		<td>1 - 6<br/>
 		1 = WALKING<br/>
 		2 = WALKING_UPSTAIRS<br/>
@@ -298,11 +389,11 @@ Codebook for Activities
 		4 = SITTING<br/>
 		5 = STANDING<br/>
 		6 = LAYING</td>
-		<td>ID of activity measured</td>
+		<td valign='top'>ID of activity measured</td>
 	</tr>
 	<tr>
-		<td>activity</td>
-		<td>2</td>
+		<td valign='top'>activity</td>
+		<td valign='top'>2</td>
 		<td>character<br/>
 		WALKING<br/>
 		WALKING_UPSTAIRS<br/>
@@ -310,58 +401,144 @@ Codebook for Activities
 		SITTING<br/>
 		STANDING<br/>
 		LAYING</td>
-		<td>Name of the activity measured</td>
+		<td valign='top'>Name of the activity measured</td>
 	</tr>
 </table>
 
 Codebook for Features
-| Variable Name		| Position	| Values			| Description			|
-|-----------------------|---------------|-------------------------------|-------------------------------|
-| id			| 1		| 1 - 561			| ID of the feature measured	|
-|-----------------------|---------------|-------------------------------|-------------------------------||			|		|				|				|
-| feature		| 2		| tBodyAcc-mean()-X		| Name of the feature measured	|
-|			|		| tBodyGyroJerk-mean()-X	| * See 'features.txt' 		|
-|			|		| fBodyAcc-std()-X		|   for complete list of values	|
-|			|		| angle(Z,gravityMean)		|				|
-|			|		| ..list truncated		|				|
-|-----------------------|---------------|-------------------------------|-------------------------------|
+<table>
+	<tr>
+		<td>Variable Name</td>
+		<td>Position</td>
+		<td>Values</td>
+		<td>Description</td>
+	</tr>
+	<tr>
+		<td>id</td>
+		<td>1</td>
+		<td>1 - 561</td>
+		<td>ID of the feature measured</td>
+
+	</tr>
+	<tr>
+		<td valign='top'>feature</td>
+		<td valign='top'>2</td>
+		<td>tBodyAcc-mean()-X<br/>
+		tBodyGyroJerk-mean()-X<br/>
+		fBodyAcc-std()-X<br/>
+		angle(Z,gravityMean)<br/>
+		..list truncated
+		</td>
+		<td valign='top'>Name of the feature measured<br/>
+			* See 'features.txt'<br/>
+			for complete list of values
+		</td>
+	</tr>
+</table>
 Notes: 
-======
 - Features are normalized and bounded within [-1,1].
 
 
 
 Codebook for Training Data Files
-a) Training Data
-Variable Name		Position	Values			Description
-V1 - V561		1		Numeric 		
+a)Training Data
+<table>
+	<tr>
+		<td>Variable Name</td>
+		<td>Position</td>
+		<td>Values</td>
+		<td>Description</td>
+	</tr>
+	<tr>
+		<td>V1 - V561</td>
+		<td>1</td>
+		<td>Numeric</td> 
+		<td>Readings off the instruments - Accelerometer, Gyroscope</td>
+	</tr>		
+</table>
 
 b) Training Activities
-activityId		1		1 - 6			ID of the activity measured
+<table>
+	<tr>
+		<td>activityId</td>
+		<td>1</td>
+		<td>1 - 6</td>
+		<td>ID of the activity measured</td>
+	</tr>
+	<tr>
+		<td>activityId</td>
+		<td>1</td>
+		<td>1 - 6</td>
+		<td>ID of the activity measure</td>
+	</tr>
+</table>
 
 c) Training Subjects
-subjectId		1		1 - 30			ID of the subject performing the activity
+<table>
+	<tr>
+		<td>Variable Name</td>
+		<td>Position</td>
+		<td>Values</td>
+		<td>Description</td>
+	</tr>
+	<tr>
+		<td>subjectId</td>
+		<td>1</td>
+		<td>1 - 30</td>
+		<td>ID of the subject performing the activity</td>
+	</tr>
+</table>
+
 
 
 Codebook for Test Data Files
 a) Test Data
-| Variable Name | Position | Values  | Description                                           |
-|---------------|----------|---------|-------------------------------------------------------|
-| V1 - V561     | 1        | Numeric | Readings off the instruments Accelerometer, Gyroscope |
-|               |          |         |                                                       |
-
+<table>
+	<tr>
+		<td>Variable Name</td>
+		<td>Position</td>
+		<td>Values</td>
+		<td>Description</td>
+	</tr>
+	<tr>
+		<td>V1 - V561</td>
+		<td>1</td>
+		<td>Numeric</td> 
+		<td>Readings off the instruments - Accelerometer, Gyroscope</td>
+	</tr>
+</table>
 
 b) Test Activities
-| Variable Name | Position | Values  | Description                                           |
-|---------------|----------|---------|-------------------------------------------------------|
-| activityId	| 1	   | 1 - 6   | ID of the activity measured			     |
-|               |          |         |                                                       |
+<table>
+	<tr>
+		<td>Variable Name</td>
+		<td>Position</td>
+		<td>Values</td>
+		<td>Description</td>
+	</tr>
+	<tr>
+		<td>activityId</td>
+		<td>1</td>
+		<td>1 - 6</td>
+		<td>ID of the activity measure</td>
+	</tr>
+</table>
 
 c) Test Subjects
-| Variable Name | Position | Values  | Description                                           |
-|---------------|----------|---------|-------------------------------------------------------|
-| subjectId	| 1	   | 1 - 30  | ID of the subject performing the activity	     |
-|               |          |         |                                                       |
+<table>
+	<tr>
+		<td>Variable Name</td>
+		<td>Position</td>
+		<td>Values</td>
+		<td>Description</td>
+	</tr>
+	<tr>
+		<td>subjectId</td>
+		<td>1</td>
+		<td>1 - 30</td>
+		<td>ID of the subject performing the activity</td>
+	</tr>
+</table>
 
 				
 
