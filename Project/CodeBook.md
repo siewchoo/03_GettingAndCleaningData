@@ -138,93 +138,139 @@ For each record, it is provided:
       Part 4c) Test Subjects.
 
 
-'Part 1: Activities'
-	- List the activities measured in the experiment.
-	Location: ./UCI HAR Dataset
-File: activity_labels.txt
-Observations: 6
-Variables: 2
-
 <table>
 	<tr>
-		<td colspan='2'>Part 2: Features</td>
-	<tr>
-	<tr>
-		<td colspan='2'>- List of all features measured in the experiment.</td>
-	<tr>
+		<td colspan='2'>Part 1: Activities<br/>
+		- List the activities measured in the experiment.</td>
+	</tr>
 	<tr>
 		<td>Location:</td>
 		<td>./UCI HAR Dataset</td>
+	</tr>
 	<tr>
+		<td>tdFile:</td>
+		<td>activity_labels.txt</td>
+	</tr>
 	<tr>
-		<td>File:</td>
-		<td>features.txt<br/>(features_info.txt provides more details)</td>
-	<tr>
-	<tr>
-		<td>Obervations:</td>
-		<td>561</td>
-	<tr>
+		<td>Observations:</td>
+		<td>6</td>
 	<tr>
 		<td>Variables:</td>
 		<td>2</td>
+	</tr>
 </table>
 
 <table>
 	<tr>
-		<td colspan='2'>Part 3: Training Data</td>
+		<td colspan='2'>Part 2: Features<br/>
+		- List of all features measured in the experiment.</td>
 	</tr>
 	<tr>
-		<td colspan='2'>- A collection of text files containing data collected during a training session.</td>
+		<td>Location:</td>
+		<td>./UCI HAR Dataset</td>
+	</tr>
+	<tr>
+		<td>File:</td>
+		<td>features.txt<br/>(features_info.txt provides more details)</td>
+	</tr>
+	<tr>
+		<td>Observations:</td>
+		<td>561</td>
+	</tr>
+	<tr>
+		<td>Variables:</td>
+		<td>2</td>
+	</tr>
+</table>
+
+<table>
+	<tr>
+		<td colspan='2'>Part 3: Training Data<br/>
+		- A collection of text files containing data collected during a training session.</td>
 	</tr>
 	<tr>
 		<td>Location:</td>
 		<td>./UCI HAR Dataset/train</td>
 	</tr>
+	<tr>
+		<td colspan='2'>a) Training Data</td>
+	</tr>
+	<tr>
+		<td>File:</td>
+		<td>X_train.txt</td>
+	</tr>
+	<tr>
+		<td colspan='2'>Contains measurement values for all features measured during training.<br/>
+		Each row represents a measurement taken of all features measured during training.</td>
+   	<tr>
+		<td>Observations:</td>
+		<td>7352</td>
+	</tr>
+	<tr>
+		<td>Variables:</td>
+		<td>561</td>
+	</tr>
+	<tr>
+		<td colspan='2'>b) Training Activities</td>
+	</tr>
+	<tr>
+		<td>File:</td>
+		<td>y_train.txt</td>
+	</tr>
+	<tr>
+		<td colspan='2'>Contains activity IDs of the activities measured during the training.<br/>
+		Each row identifies the activity performed for each training window sample.</td>
+   	<tr>
+		<td>Observations:</td>
+		<td>7352</td>
+	</tr>
+	<tr>
+		<td>Variables:</td>
+		<td>1</td>
+	</tr>
+	<tr>
+		<td colspan='2'>b) Training Subjects</td>
+	</tr>
+	<tr>
+		<td>File:</td>
+		<td>subject_train.txt</td>
+	</tr>
+	<tr>
+		<td colspan='2'>Contains IDs of the training subjects.<br/>
+		Each row identifies the subject who performed the activity for each training window sample.</td>
+   	<tr>
+		<td>Observations:</td>
+		<td>7352</td>
+	</tr>
+	<tr>
+		<td>Variables:</td>
+		<td>1</td>
+	</tr>
 <table>
 
-a) Training Data
-   File: X_train.txt
-	 Contains measurement values for all features measured during training.
-	 Each row represents a measurement taken of all features measured during training.
-   Obervations: 7352
-   Variables: 561
 
-b) Training Activities
-   File: y_train.txt
-	 Contains activity IDs of the activities measured during the training.
-	 Each row identifies the activity performed for each training window sample.
-   Obervations: 7352
-   Variables: 1
-
-c) Training Subjects
-   File: subject_train.txt
-	 Contains IDs of the training subjects.
-	 Each row identifies the subject who performed the activity for each training window sample.
-   Obervations: 7352
-   Variables: 1
-
-'Part 4: Test Data'
+Part 4: Test Data
 	- A collection of text files containing data collected during a test run.
 	Location: ./UCI HAR Dataset/test
 a) Test Data
    File: X_test.txt
 	 Contains measurement values for all features measured during the test run.
 	 Each row represents a measurement taken of all features measured during the test run.
-   Obervations: 2947
+   Observations: 2947
    Variables: 561
 
 b) Test Activities
    File: y_test.txt
 	 Contains activity IDs of the activities measured during the test run.
 	 Each row identifies the activity performed for each test window sample.
-   Obervations: 2947
+   Observations: 2947
    Variables: 1
 
 c) Test Subjects
    File: subject_test.txt
 	 Contains IDs of the training subjects.
 	 Each row identifies the subject who performed the activity for each test window sample.
-   Obervations: 2947
+   Observations: 2947
    Variables: 1
 
 'Part 5: Miscellaneous Information'
@@ -235,24 +281,38 @@ Files: README.txt
        - Accompanying information regarding the features measured in the project.
 
 Codebook for Activities
-| Variable Name		| Position	| Values			| Description			|
-|-----------------------+---------------+-------------------------------+-------------------------------|
-| id			| 1		| 1 - 6				| ID of activity measured	|
-|			|		| 1 = WALKING			|				|
-|			|		| 2 = WALKING_UPSTAIRS		|				|
-|			|		| 3 = WALKING_DOWNSTAIRS	|				|
-|			|		| 4 = SITTING			|				|
-|			|		| 5 = STANDING			|				|
-|			|		| 6 = LAYING			|				|
-|-----------------------+---------------+-------------------------------+-------------------------------|
-| activity		| 2		| WALKING			| Name of the activity measured	|
-|			|		| WALKING_UPSTAIRS		|				|
-|			|		| WALKING_DOWNSTAIRS		|				|
-|			|		| SITTING			|				|
-|			|		| STANDING			|				|
-|			|		| LAYING			|				|
-|-----------------------|---------------|-------------------------------|-------------------------------|
-
+<table>
+	<tr>
+		<td>Variable Name</td>
+		<td>Position</td>
+		<td>Values</td>
+		<td>Description</td>
+	</tr>
+	<tr>
+		<td>id</td>
+		<td>1</td>
+		<td>1 - 6<br/>
+		1 = WALKING<br/>
+		2 = WALKING_UPSTAIRS<br/>
+		3 = WALKING_DOWNSTAIRS<br/>
+		4 = SITTING<br/>
+		5 = STANDING<br/>
+		6 = LAYING</td>
+		<td>ID of activity measured</td>
+	</tr>
+	<tr>
+		<td>activity</td>
+		<td>2</td>
+		<td>character<br/>
+		WALKING<br/>
+		WALKING_UPSTAIRS<br/>
+		WALKING_DOWNSTAIRS<br/>
+		SITTING<br/>
+		STANDING<br/>
+		LAYING</td>
+		<td>Name of the activity measured</td>
+	</tr>
+</table>
 
 Codebook for Features
 | Variable Name		| Position	| Values			| Description			|
