@@ -1,4 +1,4 @@
-###Data Set Code Book: 
+##Data Set Code Book: 
 Human Activity Recognition Using Smartphones
 
 Codebook Version 1.0
@@ -49,7 +49,8 @@ Additional reference material for the experiment:
 	International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012
 
 
-###The Data Set
+The Data Set
+------------
 The project was carried out with 30 subjects aged between 19-48 years. Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist. 
 Using its embedded accelerometer and gyroscope, they captured 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz. 
 
@@ -63,14 +64,19 @@ From each window, a vector of features was obtained by calculating variables fro
 
 See 'features_info.txt' for more details. 
 
-For each record, it is provided:
+
+The following files are available for the train and test data. Their descriptions are equivalent. 
 
 1. Triaxial acceleration from the accelerometer (total acceleration) and the estimated body acceleration.
-  Depending on whether the data was collected as part of training or testing, the data files are either in
-  - ./UCI HAR Dataset/train/Inertial Signals/
-  - ./UCI HAR Dataset/test/Inertial Signals/
+   Depending on whether the data was collected as part of training or testing, the data files are either in
+   - ./UCI HAR Dataset/train/Inertial Signals/
+   - ./UCI HAR Dataset/test/Inertial Signals/
 
-  Files for total acceleration (from the accelerometer):
+   The acceleration signal from the smartphone accelerometer X axis in standard gravity units 'g'. 
+   Every row shows a 128 element vector. 
+   The same description applies for the 'total_acc_x_train.txt' and 'total_acc_z_train.txt' files for the Y and Z axis. 
+
+   Files for total acceleration (from the accelerometer):
 <table>
 	<tr>
 		<td>total_acc_x_train.txt</td>
@@ -85,6 +91,8 @@ For each record, it is provided:
 		<td>total_acc_z_test.txt</td>
 	</tr>
 </table>
+
+  The body acceleration signal was obtained by subtracting the gravity from the total acceleration. 
 
   Files for estimated body acceleration (from the accelerometer):
 <table>
@@ -104,9 +112,12 @@ For each record, it is provided:
 
 
 2. Triaxial Angular velocity from the gyroscope. 
-  Depending on whether the data was collected as part of training or testing, the data files are either in
-  - ./UCI HAR Dataset/train/Inertial Signals/
-  - ./UCI HAR Dataset/test/Inertial Signals/
+   Depending on whether the data was collected as part of training or testing, the data files are either in
+   - ./UCI HAR Dataset/train/Inertial Signals/
+   - ./UCI HAR Dataset/test/Inertial Signals/
+
+   The angular velocity vector measured by the gyroscope for each window sample. 
+   The units are radians/second. 
 
   Files for angular velocity (from the gyroscope):
 <table>
@@ -125,17 +136,14 @@ For each record, it is provided:
 </table>
 
 
-3. A 561-feature vector with time and frequency domain variables.
-  - See Part 3a) Training Data and
-      Part 4a) Test Data  
+3. A 561-feature measurement data vector with time and frequency domain variables.
+   - See `3a) Training Data` and `4a) Test Data `
 
 4. Its activity label.
-  - See Part 3b) Training Activities and
-      Part 4b) Test Activities
+   - See `3b) Training Activities` and `4b) Test Activities`
 
 5. An identifier of the subject who carried out the experiment.
-  - See Part 3c) Training Subjects and 
-      Part 4c) Test Subjects.
+   - See `3c) Training Subjects` and `4c) Test Subjects`
 
 
 Part 1: Activities
@@ -148,7 +156,7 @@ Part 1: Activities
 		<td>./UCI HAR Dataset</td>
 	</tr>
 	<tr>
-		<td>tdFile:</td>
+		<td>File:</td>
 		<td>activity_labels.txt</td>
 	</tr>
 	<tr>
@@ -231,6 +239,7 @@ Part 3: Training Data
 		<td colspan='2'>Contains activity IDs of the activities measured during the training.<br/>
 		Each row identifies the activity performed for each training window sample.</td>
    	<tr>
+		<td></td>
 		<td>Observations:</td>
 		<td>7352</td>
 	</tr>
@@ -241,7 +250,8 @@ Part 3: Training Data
 	</tr>
 	<tr>
 		<td></td>
-		<td colspan='2'>b) Training Subjects</td>
+		<td colspan='2'>b)</td>
+		<td>Training Subjects</td>
 	</tr>
 	<tr>
 		<td></td>
@@ -275,9 +285,8 @@ Part 4: Test Data
 		<td>./UCI HAR Dataset/test</td>
 	</tr>
 	<tr>
-		<td></td>
 		<td>a)<td>
-		<td>Test Data</td>
+		<td colspan='2'>Test Data</td>
 	</tr>
 	<tr>
 		<td></td>
@@ -301,9 +310,8 @@ Part 4: Test Data
 		<td>561</td>
 	</tr>
 	<tr>
-		<td></td>
 		<td>b)</td>
-		<td>Test Activities</td>
+		<td colspan='2'>Test Activities</td>
 	</tr>
 	<tr>
 		<td></td>
@@ -370,6 +378,8 @@ Part 5: Miscellaneous Information
 	</tr>
 		<td colspan='2'>- Accompanying information regarding the features measured in the project.</td>
 	</tr>
+</table>
+
 
 Codebook for Activities
 <table>
@@ -442,7 +452,7 @@ Notes:
 
 Codebook for Training Data Files
 a)Training Data
-<table>
+<table width='850'>
 	<tr>
 		<td>Variable Name</td>
 		<td>Position</td>
@@ -539,26 +549,5 @@ c) Test Subjects
 		<td>ID of the subject performing the activity</td>
 	</tr>
 </table>
-
-				
-
-The following files are available for the train and test data. Their descriptions are equivalent. 
-
-- 'train/subject_train.txt': Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30. 
-  (tsc: - contains the list of activities measured during either training or testing.
-	test/subject_train.txt
-	- Has 7352 rows - represents the number of measurements made during training
-	- and 1 column - "subjectId")
- 	test/subject_train.txt
-	- Has 2947 rows - represents the number of measurements made during testing
-	- and 1 column - "subjectId")
-
-- 'train/Inertial Signals/total_acc_x_train.txt': The acceleration signal from the smartphone accelerometer X axis in standard gravity units 'g'. Every row shows a 128 element vector. 
-						  The same description applies for the 'total_acc_x_train.txt' and 'total_acc_z_train.txt' files for the Y and Z axis. 
-
-- 'train/Inertial Signals/body_acc_x_train.txt': The body acceleration signal obtained by subtracting the gravity from the total acceleration. 
-
-- 'train/Inertial Signals/body_gyro_x_train.txt': The angular velocity vector measured by the gyroscope for each window sample. The units are radians/second. 
-
 
 
