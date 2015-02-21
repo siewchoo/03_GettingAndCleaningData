@@ -49,8 +49,8 @@ Additional reference material for the experiment:
 	International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012
 
 
-The Data Set
-------------
+Details
+-------
 The project was carried out with 30 subjects aged between 19-48 years. Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist. 
 Using its embedded accelerometer and gyroscope, they captured 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz. 
 
@@ -65,6 +65,8 @@ From each window, a vector of features was obtained by calculating variables fro
 See 'features_info.txt' for more details. 
 
 
+The Data Set
+------------
 The following files are available for the train and test data. Their descriptions are equivalent. 
 
 1. Triaxial acceleration from the accelerometer (total acceleration) and the estimated body acceleration.
@@ -116,7 +118,7 @@ The following files are available for the train and test data. Their description
    - ./UCI HAR Dataset/train/Inertial Signals/
    - ./UCI HAR Dataset/test/Inertial Signals/
 
-   The angular velocity vector measured by the gyroscope for each window sample. 
+   The angular velocity vector was measured by the gyroscope for each window sample. 
    The units are radians/second. 
 
   Files for angular velocity (from the gyroscope):
@@ -144,6 +146,7 @@ The following files are available for the train and test data. Their description
 
 5. An identifier of the subject who carried out the experiment.
    - See `3c) Training Subjects` and `4c) Test Subjects`
+
 
 
 Part 1: Activities
@@ -249,9 +252,8 @@ Part 3: Training Data
 		<td>1</td>
 	</tr>
 	<tr>
-		<td></td>
-		<td colspan='2'>b)</td>
-		<td>Training Subjects</td>
+		<td>b)</td>
+		<td colspan='2'>Training Subjects</td>
 	</tr>
 	<tr>
 		<td></td>
@@ -295,8 +297,7 @@ Part 4: Test Data
 	</tr>
 	<tr>
 		<td></td>
-		<td></td>
-		<td>Contains measurement values for all features measured during the test run.<br/>
+		<td colspan='2'>Contains measurement values for all features measured during the test run.<br/>
 		Each row represents a measurement taken of all features measured during the test run.</td>
 	</tr>
 	<tr>
@@ -320,7 +321,7 @@ Part 4: Test Data
 	</tr>
 	<tr>
 		<td></td>
-		<td>Contains activity IDs of the activities measured during the test run.<br/>
+		<td colspan='2'>Contains activity IDs of the activities measured during the test run.<br/>
 	 	Each row identifies the activity performed for each test window sample.</td>
 	</tr>
 	<tr>
@@ -367,16 +368,13 @@ Part 5: Miscellaneous Information
 	</tr>
 	<tr>
 		<td>Files:</td>
-		<td>README.txt</td>
-	</tr>
-	<tr>
-		<td colspan='2'>- Information presented here are derived from this file.</td>
+		<td>README.txt<br/>
+		- Information presented here are derived from this file.</td>
 	</tr>
 	<tr>
 		<td></td>
-		<td>features_info.txt</td>
-	</tr>
-		<td colspan='2'>- Accompanying information regarding the features measured in the project.</td>
+		<td>features_info.txt<br/>
+		- Accompanying information regarding the features measured in the project.</td>
 	</tr>
 </table>
 
@@ -468,7 +466,7 @@ a)Training Data
 </table>
 
 b) Training Activities
-<table>
+<table width='850'>
 	<tr>
 		<td>activityId</td>
 		<td>1</td>
@@ -484,7 +482,7 @@ b) Training Activities
 </table>
 
 c) Training Subjects
-<table>
+<table width='850'>
 	<tr>
 		<td>Variable Name</td>
 		<td>Position</td>
