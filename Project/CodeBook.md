@@ -68,24 +68,30 @@ For each record, it is provided:
   - ./UCI HAR Dataset/test/Inertial Signals/
 
   Files for total acceleration (from the accelerometer):
-	total_acc_x_train.txt		total_acc_x_test.txt
-	total_acc_y_train.txt		total_acc_y_test.txt
-	total_acc_z_train.txt		total_acc_z_test.txt
+	|--------------------------+---------------------------|
+	| total_acc_x_train.txt    |	total_acc_x_test.txt   |
+	| total_acc_y_train.txt	   |	total_acc_y_test.txt   |
+	| total_acc_z_train.txt	   |	total_acc_z_test.txt   |
+	|--------------------------+---------------------------|
 
   Files for estimated body acceleration (from the accelerometer):
-	body_acc_x_train.txt		body_acc_x_test.txt
-	body_acc_y_train.txt		body_acc_y_test.txt
-	body_acc_z_train.txt		body_acc_z_test.txt
+	|--------------------------+---------------------------|
+	| body_acc_x_train.txt     |	body_acc_x_test.txt    |
+	| body_acc_y_train.txt	   |	body_acc_y_test.txt    |
+	| body_acc_z_train.txt	   |	body_acc_z_test.txt    |
+	|--------------------------+---------------------------|
 
-2.- Triaxial Angular velocity from the gyroscope. 
+2. Triaxial Angular velocity from the gyroscope. 
   Depending on whether the data was collected as part of training or testing, the data files are either in
   - ./UCI HAR Dataset/train/Inertial Signals/
   - ./UCI HAR Dataset/test/Inertial Signals/
 
   Files for angular velocity (from the gyroscope):
-	body_gyro_x_train.txt		body_gyro_x_test.txt
-	body_gyro_y_train.txt		body_gyro_y_test.txt
-	body_gyro_z_train.txt		body_gyro_z_test.txt
+	|--------------------------+---------------------------|
+	| body_gyro_x_train.txt	   |	body_gyro_x_test.txt   |
+	| body_gyro_y_train.txt	   |	body_gyro_y_test.txt   |
+	| body_gyro_z_train.txt	   |	body_gyro_z_test.txt   |
+	|--------------------------+---------------------------|
 
 3. A 561-feature vector with time and frequency domain variables.
   See Part 3a) Training Data and
@@ -172,7 +178,7 @@ Files: README.txt
 
 Codebook for Activities
 | Variable Name		| Position	| Values			| Description			|
-|-----------------------|---------------|-------------------------------|-------------------------------|
+|-----------------------+---------------+-------------------------------+-------------------------------|
 | id			| 1		| 1 - 6				| ID of activity measured	|
 |			|		| 1 = WALKING			|				|
 |			|		| 2 = WALKING_UPSTAIRS		|				|
@@ -180,7 +186,7 @@ Codebook for Activities
 |			|		| 4 = SITTING			|				|
 |			|		| 5 = STANDING			|				|
 |			|		| 6 = LAYING			|				|
-|-----------------------|---------------|-------------------------------|-------------------------------|
+|-----------------------+---------------+-------------------------------+-------------------------------|
 | activity		| 2		| WALKING			| Name of the activity measured	|
 |			|		| WALKING_UPSTAIRS		|				|
 |			|		| WALKING_DOWNSTAIRS		|				|
