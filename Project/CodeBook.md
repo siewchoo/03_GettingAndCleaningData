@@ -8,7 +8,7 @@ Codebook prepared by TSC based on data set she downloaded at the following URL:
 
 	https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
 
-The downloaded 'UCI HAR Dataset.zip' file when unzipped contains:
+The downloaded 'getdata-projectfiles-UCI HAR Dataset.zip' file when unzipped contains:
 
 1. 1 folder for the training data
 2. 1 folder for the test data
@@ -19,14 +19,15 @@ The downloaded 'UCI HAR Dataset.zip' file when unzipped contains:
 
 Disclaimer:
 The above dataset is distributed AS-IS and no responsibility implied or explicit can be addressed to the authors or their institutions for its use or misuse. Any commercial use is prohibited.
-\==================================================================
+<!-- -->
+==================================================================
 Jorge L. Reyes-Ortiz, Davide Anguita, Alessandro Ghio, Luca Oneto.
 Smartlab - Non Linear Complex Systems Laboratory
 DITEN - Università degli Studi di Genova.
 Via Opera Pia 11A, I-16145, Genoa, Italy.
 activityrecognition@smartlab.ws
 www.smartlab.ws
-\==================================================================
+==================================================================
 
 
 Data Collection Description
@@ -74,7 +75,7 @@ The following files are available for the train and test data. Their description
    - ./UCI HAR Dataset/train/Inertial Signals/
    - ./UCI HAR Dataset/test/Inertial Signals/
 
-   The acceleration signal from the smartphone accelerometer X axis in standard gravity units 'g'. 
+   The acceleration signal from the smartphone accelerometer X axis is in standard gravity units 'g'. 
    Every row shows a 128 element vector. 
    The same description applies for the 'total_acc_x_train.txt' and 'total_acc_z_train.txt' files for the Y and Z axis. 
 
@@ -139,17 +140,18 @@ The following files are available for the train and test data. Their description
 
 
 3. A 561-feature measurement data vector with time and frequency domain variables.
-   - See `3a) Training Data` and `4a) Test Data `
+   - See `Part 3a) Training Data` and `Part 4a) Test Data `
 
 4. Its activity label.
-   - See `3b) Training Activities` and `4b) Test Activities`
+   - See `Part 3b) Training Activities` and `Part 4b) Test Activities`
 
 5. An identifier of the subject who carried out the experiment.
-   - See `3c) Training Subjects` and `4c) Test Subjects`
+   - See `Part 3c) Training Subjects` and `Part 4c) Test Subjects`
 
 
 
 Part 1: Activities
+------------------
 <table>
 	<tr>
 		<td colspan='2'>- List the activities measured in the experiment.</td>
@@ -173,6 +175,7 @@ Part 1: Activities
 
 
 Part 2: Features
+----------------
 <table>
 	<tr>
 		<td colspan='2'>- List of all features measured in the experiment.</td>
@@ -197,6 +200,7 @@ Part 2: Features
 
 
 Part 3: Training Data
+---------------------
 <table>
 	<tr>
 		<td colspan='3'>- A collection of text files containing data collected during a training session.</td>
@@ -252,7 +256,7 @@ Part 3: Training Data
 		<td>1</td>
 	</tr>
 	<tr>
-		<td>b)</td>
+		<td>c)</td>
 		<td colspan='2'>Training Subjects</td>
 	</tr>
 	<tr>
@@ -278,6 +282,7 @@ Part 3: Training Data
 
 
 Part 4: Test Data
+-----------------
 <table>
 	<tr>
 		<td colspan='3'>- A collection of text files containing data collected during a test run.
@@ -287,8 +292,8 @@ Part 4: Test Data
 		<td>./UCI HAR Dataset/test</td>
 	</tr>
 	<tr>
-		<td>a)<td>
-		<td colspan='2'>Test Data</td>
+		<td>a)</td>
+		<td colspan='2'>Testing Data</td>
 	</tr>
 	<tr>
 		<td></td>
@@ -362,6 +367,7 @@ Part 4: Test Data
 
 
 Part 5: Miscellaneous Information
+---------------------------------
 <table>
 	<tr>
 		<td colspan='2'>Other supporting information regarding the nature and use of files and fields.</td>
@@ -380,6 +386,7 @@ Part 5: Miscellaneous Information
 
 
 Codebook for Activities
+-----------------------
 <table>
 	<tr>
 		<td>Variable Name</td>
@@ -413,7 +420,9 @@ Codebook for Activities
 	</tr>
 </table>
 
+
 Codebook for Features
+---------------------
 <table>
 	<tr>
 		<td>Variable Name</td>
@@ -447,49 +456,58 @@ Notes:
 - Features are normalized and bounded within [-1,1].
 
 
-
 Codebook for Training Data Files
-a)Training Data
-<table width='850'>
+--------------------------------
+<table>
 	<tr>
+		<td>a)</td>
+		<td colspan='4'>Training Data</td>
+	</tr>
+	<tr>
+		<td></td>
 		<td>Variable Name</td>
 		<td>Position</td>
 		<td>Values</td>
 		<td>Description</td>
 	</tr>
 	<tr>
+		<td></td>
 		<td>V1 - V561</td>
 		<td>1</td>
 		<td>Numeric</td> 
 		<td>Readings off the instruments - Accelerometer, Gyroscope</td>
 	</tr>		
-</table>
-
-b) Training Activities
-<table width='850'>
 	<tr>
-		<td>activityId</td>
-		<td>1</td>
-		<td>1 - 6</td>
-		<td>ID of the activity measured</td>
+		<td>b)</td>
+		<td colspan='4'>Training Activities</td>
 	</tr>
 	<tr>
-		<td>activityId</td>
-		<td>1</td>
-		<td>1 - 6</td>
-		<td>ID of the activity measure</td>
-	</tr>
-</table>
-
-c) Training Subjects
-<table width='850'>
-	<tr>
+		<td></td>
 		<td>Variable Name</td>
 		<td>Position</td>
 		<td>Values</td>
 		<td>Description</td>
 	</tr>
 	<tr>
+		<td></td>
+		<td>activityId</td>
+		<td>1</td>
+		<td>1 - 6</td>
+		<td>ID of the activity measure</td>
+	</tr>
+	<tr>
+		<td>c)</td>
+		<td colspan='4'>Training Subjects</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>Variable Name</td>
+		<td>Position</td>
+		<td>Values</td>
+		<td>Description</td>
+	</tr>
+	<tr>
+		<td></td>
 		<td>subjectId</td>
 		<td>1</td>
 		<td>1 - 30</td>
@@ -498,42 +516,49 @@ c) Training Subjects
 </table>
 
 
-
 Codebook for Test Data Files
-a) Test Data
+----------------------------
 <table>
 	<tr>
+		<td>a)</td>
+		<td colspan='4'>Test Data</td>
+	</tr>
+	<tr>
+		<td></td>
 		<td>Variable Name</td>
 		<td>Position</td>
 		<td>Values</td>
 		<td>Description</td>
 	</tr>
 	<tr>
+		<td></td>
 		<td>V1 - V561</td>
 		<td>1</td>
 		<td>Numeric</td> 
 		<td>Readings off the instruments - Accelerometer, Gyroscope</td>
 	</tr>
-</table>
-
-b) Test Activities
-<table>
 	<tr>
+		<td>b)</td>
+		<td colspan='4'>Test Activities</td>
+	</tr>
+	<tr>
+		<td></td>
 		<td>Variable Name</td>
 		<td>Position</td>
 		<td>Values</td>
 		<td>Description</td>
 	</tr>
 	<tr>
+		<td></td>
 		<td>activityId</td>
 		<td>1</td>
 		<td>1 - 6</td>
 		<td>ID of the activity measure</td>
 	</tr>
-</table>
-
-c) Test Subjects
-<table>
+	<tr>
+		<td>c)</td>
+		<td colspan='4'>Test Subjects</td>
+	</tr>
 	<tr>
 		<td>Variable Name</td>
 		<td>Position</td>
@@ -549,3 +574,48 @@ c) Test Subjects
 </table>
 
 
+Cleaning the Data
+=================
+In a likely test window sample scenario, a test subject will be recorded performing an activity with the readings from the instruments recorded for the duration of the activity.
+It would, therefore,  be natural that all the test measurement data be linked to an activity and to the subject performing it.
+However, the data collected is highly fragmented, with the recorded data spread across 3 files.
+
+(a) A very wide measurement data file with reading values for 561 features
+(b) A single column file, listing the activity performed. Each row corresponds to a row in (a).
+(c) A single column file, listing the test subject involved. Similarly, every row corresponds to a row in (a).
+
+These files resides in the `test` subdirectory as is the nature of the collection.
+A similar set for data recorded during training is found in the `train` subdirectory.
+
+This effectively brings the file count to 6.
+Since file (a) contains only the instrumental readings, there are no 'keys' to attribute to what or whom each observation was for.
+
+Hence, the steps I took to tidy the data has been listed below.
+
+1. Combine the 
+   - training measurement data file (See `Part 3a) Training Data`) with 7352 rows and 561 columns
+   - testing measuremnt data file (`Part 4a) Test Data`) with 2947 rows and 561 columns
+   - into a rectangular data set with 10299 rows and 561 columns.
+
+2. Combine the
+   - training activities data file (See `Part 3b) Training Activities`) with 7352 rows and 1 column   
+   - testing activities data file (`Part 4b) Test Activities`) with 2947 rows and 1 column
+   - into a long, single column data set with 10299 rows and 1 column.
+
+3. Combine the 
+   - training subjects data file (See `Part 3c) Training Subjects`) with 7352 rows and 1 column
+   - testing subjects data file (`Part 4a) Test Subjects`) with 2947 rows and 1 column
+   - into a long, single column data set with 10299 rows and 1 column.
+
+4. Perform a column-wise bind on the datasets from previous steps 
+   - activities + subjects + measurement data
+   - into a rsulting data set with 10299 rows and 563 columns.
+
+5. Since we are only interested in data involving mean and standard deviation measurements, 
+   the data set is pared down to remove columns that we are not interested in.
+
+6. Rows in the reduced data set is then updated with appropriate labels for the activities.
+
+7. Column headings involving features are also updated with more user-friendly descriptions.
+
+As a final step, another independent tidy data set is created with the average of each variable for each activity and each subject.
