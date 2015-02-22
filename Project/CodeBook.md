@@ -27,8 +27,7 @@ Smartlab - Non Linear Complex Systems Laboratory<br/>
 DITEN - Università degli Studi di Genova.<br/>
 Via Opera Pia 11A, I-16145, Genoa, Italy.<br/>
 activityrecognition@smartlab.ws<br/>
-www.smartlab.ws<br/>
-<!-- -->
+www.smartlab.ws<br/><!-- -->
 ==================================================================
 
 
@@ -151,10 +150,11 @@ The following files are available for the train and test data. Their description
 5. An identifier of the subject who carried out the experiment.
    - See `Part 3c) Training Subjects` and `Part 4c) Test Subjects`
 
+<br/>
 For this course project, we shall be focusing on items 3 through 5 of the above mentioned.
 <br/>
 
-
+<br/>
 Part 1: Activities
 ------------------
 <table>
@@ -391,6 +391,7 @@ Part 5: Miscellaneous Information
 		- Accompanying information regarding the features measured in the project.</td>
 	</tr>
 </table>
+<br/>
 
 
 Codebook for Activities
@@ -427,6 +428,7 @@ Codebook for Activities
 		<td valign='top'>Name of the activity measured</td>
 	</tr>
 </table>
+<br/>
 
 
 Codebook for Features
@@ -463,7 +465,7 @@ Codebook for Features
 </table>
 Notes: 
 - Features are normalized and bounded within [-1,1].
-
+<br/>
 
 Codebook for Training Data Files
 --------------------------------
@@ -523,6 +525,7 @@ Codebook for Training Data Files
 		<td>ID of the subject performing the activity</td>
 	</tr>
 </table>
+<br/>
 
 
 Codebook for Test Data Files
@@ -583,7 +586,7 @@ Codebook for Test Data Files
 		<td>ID of the subject performing the activity</td>
 	</tr>
 </table>
-
+<br/>
 
 Cleaning the Data
 =================
@@ -591,9 +594,9 @@ In a likely test window sample scenario, a test subject will be recorded perform
 It would, therefore,  be natural that all the test measurement data be linked to an activity and to the subject performing it.
 However, the data collected is highly fragmented, with the recorded data spread across 3 files.
 
-a) A very wide measurement data file with reading values for 561 features
-b) A single column file, listing the activity performed. Each row corresponds to a row in a).
-c) A single column file, listing the test subject involved. Similarly, every row corresponds to a row in a).
+	a) A very wide measurement data file with reading values for 561 features
+	b) A single column file, listing the activity performed. Each row corresponds to a row in a).
+	c) A single column file, listing the test subject involved. Similarly, every row corresponds to a row in a).
 
 These files resides in the `test` subdirectory as is the nature of the collection.
 A similar set for data recorded during training is found in the `train` subdirectory.
@@ -625,11 +628,10 @@ Hence, the steps I took to tidy the data has been listed below.
 5. Since we are only interested in data involving mean and standard deviation measurements, 
    the data set is pared down to remove columns that we are not interested in.
    - The pared down data set now has 10299 rows and 68 columns.
+   On hindsight, it would be more optimized to pare down the measurement data set before performing the column bind.
 
 6. Rows in the reduced data set is then updated with appropriate labels for the activities.
 
 7. Column headings involving features are also updated with more user-friendly descriptions.
-
-<small>On hindsight, it would be more optimized to pare down the measurement data set before performing the column bind.</small>
 
 As a final step, another independent tidy data set is created with the average of each variable for each activity and each subject.
