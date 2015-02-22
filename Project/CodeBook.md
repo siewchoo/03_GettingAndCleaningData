@@ -13,11 +13,12 @@ The downloaded 'getdata-projectfiles-UCI HAR Dataset.zip' file when unzipped con
 1. 1 folder for the training data
 2. 1 folder for the test data
 3. 3 text files 
+
 	a. features.txt
 	b. features_info.txt 
 	c. README.txt
 
-Disclaimer:
+Disclaimer:<br/>
 The above dataset is distributed AS-IS and no responsibility implied or explicit can be addressed to the authors or their institutions for its use or misuse. Any commercial use is prohibited.
 <!-- -->
 ==================================================================
@@ -113,7 +114,7 @@ The following files are available for the train and test data. Their description
 		<td>body_acc_z_train.txt</td>
 		<td>body_acc_z_test.txt</td>
 	</tr>
-<table>
+</table>
 
 
 2. Triaxial Angular velocity from the gyroscope. 
@@ -172,6 +173,7 @@ Part 1: Activities
 	<tr>
 		<td>Observations:</td>
 		<td>6</td>
+	</tr>
 	<tr>
 		<td>Variables:</td>
 		<td>2</td>
@@ -274,6 +276,7 @@ Part 3: Training Data
 		<td></td>
 		<td colspan='2'>Contains IDs of the training subjects.<br/>
 		Each row identifies the subject who performed the activity for each training window sample.</td>
+	</tr>
    	<tr>
 		<td></td>
 		<td>Observations:</td>
