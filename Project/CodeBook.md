@@ -12,11 +12,10 @@ The downloaded 'getdata-projectfiles-UCI HAR Dataset.zip' file when unzipped con
 
 1. 1 folder for the training data
 2. 1 folder for the test data
-3. 3 text files 
-
-	a. features.txt
-	b. features_info.txt 
-	c. README.txt
+3. 3 text files<br/>
+	(a) features.txt<br/>
+	(b) features_info.txt<br/> 
+	(c) README.txt<br/>
 
 Disclaimer:<br/>
 The above dataset is distributed AS-IS and no responsibility implied or explicit can be addressed to the authors or their institutions for its use or misuse. Any commercial use is prohibited.
@@ -469,6 +468,7 @@ Codebook for Features
 Notes: 
 - Features are normalized and bounded within [-1,1].
 <br/>
+<br/>
 
 Codebook for Training Data Files
 --------------------------------
@@ -597,9 +597,9 @@ In a likely test window sample scenario, a test subject will be recorded perform
 It would, therefore,  be natural that all the test measurement data be linked to an activity and to the subject performing it.
 However, the data collected is highly fragmented, with the recorded data spread across 3 files.
 
-   a) A very wide measurement data file with reading values for 561 features
-   b) A single column file, listing the activity performed. Each row corresponds to a row in a). 
-   c) A single column file, listing the test subject involved. Similarly, every row corresponds to a row in a).
+   (a) A very wide measurement data file with reading values for 561 features<br/>
+   (b) A single column file, listing the activity performed. Each row corresponds to a row in (a).<br/>
+   (c) A single column file, listing the test subject involved. Similarly, every row corresponds to a row in (a).<br/>
 
 These files resides in the `test` subdirectory as is the nature of the collection.
 A similar set for data recorded during training is found in the `train` subdirectory.
@@ -624,7 +624,7 @@ Hence, the steps I took to tidy the data has been listed below.
    - testing subjects data file (See `Part 4a) Test Subjects`) with 2947 rows and 1 column
    - into a long, single column data set with 10299 rows and 1 column.
 
-4. Perform a column-wise bind on the datasets from previous steps 
+4. Perform a column-wise bind on the datasets from previous steps.
    - activities + subjects + measurement data
    - into a resulting data set with 10299 rows and 563 columns.
 
