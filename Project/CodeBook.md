@@ -13,6 +13,7 @@ The downloaded 'getdata-projectfiles-UCI HAR Dataset.zip' file when unzipped con
 1. 1 folder for the training data
 2. 1 folder for the test data
 3. 3 text files 
+
 	a) features.txt
 	b) features_info.txt 
 	c) README.txt
@@ -21,13 +22,15 @@ Disclaimer:
 The above dataset is distributed AS-IS and no responsibility implied or explicit can be addressed to the authors or their institutions for its use or misuse. Any commercial use is prohibited.
 <!-- -->
 ==================================================================
-Jorge L. Reyes-Ortiz, Davide Anguita, Alessandro Ghio, Luca Oneto.
-Smartlab - Non Linear Complex Systems Laboratory
-DITEN - Università degli Studi di Genova.
-Via Opera Pia 11A, I-16145, Genoa, Italy.
-activityrecognition@smartlab.ws
-www.smartlab.ws
+Jorge L. Reyes-Ortiz, Davide Anguita, Alessandro Ghio, Luca Oneto.<br/>
+Smartlab - Non Linear Complex Systems Laboratory<br/>
+DITEN - Università degli Studi di Genova.<br/>
+Via Opera Pia 11A, I-16145, Genoa, Italy.<br/>
+activityrecognition@smartlab.ws<br/>
+www.smartlab.ws<br/>
+<!-- -->
 ==================================================================
+
 
 
 Data Collection Description
@@ -50,8 +53,8 @@ Additional reference material for the experiment:
 	International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012
 
 
-Details
--------
+Project Details
+------------------
 The project was carried out with 30 subjects aged between 19-48 years. Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist. 
 Using its embedded accelerometer and gyroscope, they captured 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz. 
 
@@ -140,7 +143,7 @@ The following files are available for the train and test data. Their description
 
 
 3. A 561-feature measurement data vector with time and frequency domain variables.
-   - See `Part 3a) Training Data` and `Part 4a) Test Data `
+   - See `Part 3a) Training Data` and `Part 4a) Test Data`
 
 4. Its activity label.
    - See `Part 3b) Training Activities` and `Part 4b) Test Activities`
@@ -148,6 +151,8 @@ The following files are available for the train and test data. Their description
 5. An identifier of the subject who carried out the experiment.
    - See `Part 3c) Training Subjects` and `Part 4c) Test Subjects`
 
+For this course project, we shall be focusing on items 3 through 5 of the above mentioned.
+<br/>
 
 
 Part 1: Activities
@@ -172,7 +177,7 @@ Part 1: Activities
 		<td>2</td>
 	</tr>
 </table>
-
+<br/>
 
 Part 2: Features
 ----------------
@@ -197,6 +202,7 @@ Part 2: Features
 		<td>2</td>
 	</tr>
 </table>
+<br/>
 
 
 Part 3: Training Data
@@ -278,7 +284,8 @@ Part 3: Training Data
 		<td>Variables:</td>
 		<td>1</td>
 	</tr>
-<table>
+</table>
+<br/>
 
 
 Part 4: Test Data
@@ -363,7 +370,8 @@ Part 4: Test Data
 		<td>Variables:</td>
 		<td>1</td>
 	</tr>
-<table>
+</table>
+<br/>
 
 
 Part 5: Miscellaneous Information
@@ -440,7 +448,8 @@ Codebook for Features
 	<tr>
 		<td valign='top'>feature</td>
 		<td valign='top'>2</td>
-		<td>tBodyAcc-mean()-X<br/>
+		<td>character<br/>
+		tBodyAcc-mean()-X<br/>
 		tBodyGyroJerk-mean()-X<br/>
 		fBodyAcc-std()-X<br/>
 		angle(Z,gravityMean)<br/>
@@ -560,12 +569,14 @@ Codebook for Test Data Files
 		<td colspan='4'>Test Subjects</td>
 	</tr>
 	<tr>
+		<td></td>
 		<td>Variable Name</td>
 		<td>Position</td>
 		<td>Values</td>
 		<td>Description</td>
 	</tr>
 	<tr>
+		<td></td>
 		<td>subjectId</td>
 		<td>1</td>
 		<td>1 - 30</td>
@@ -580,9 +591,9 @@ In a likely test window sample scenario, a test subject will be recorded perform
 It would, therefore,  be natural that all the test measurement data be linked to an activity and to the subject performing it.
 However, the data collected is highly fragmented, with the recorded data spread across 3 files.
 
-(a) A very wide measurement data file with reading values for 561 features
-(b) A single column file, listing the activity performed. Each row corresponds to a row in (a).
-(c) A single column file, listing the test subject involved. Similarly, every row corresponds to a row in (a).
+a) A very wide measurement data file with reading values for 561 features
+b) A single column file, listing the activity performed. Each row corresponds to a row in a).
+c) A single column file, listing the test subject involved. Similarly, every row corresponds to a row in a).
 
 These files resides in the `test` subdirectory as is the nature of the collection.
 A similar set for data recorded during training is found in the `train` subdirectory.
@@ -594,28 +605,31 @@ Hence, the steps I took to tidy the data has been listed below.
 
 1. Combine the 
    - training measurement data file (See `Part 3a) Training Data`) with 7352 rows and 561 columns
-   - testing measuremnt data file (`Part 4a) Test Data`) with 2947 rows and 561 columns
+   - testing measurement data file (`Part 4a) Test Data`) with 2947 rows and 561 columns
    - into a rectangular data set with 10299 rows and 561 columns.
 
 2. Combine the
    - training activities data file (See `Part 3b) Training Activities`) with 7352 rows and 1 column   
-   - testing activities data file (`Part 4b) Test Activities`) with 2947 rows and 1 column
+   - testing activities data file (See `Part 4b) Test Activities`) with 2947 rows and 1 column
    - into a long, single column data set with 10299 rows and 1 column.
 
 3. Combine the 
    - training subjects data file (See `Part 3c) Training Subjects`) with 7352 rows and 1 column
-   - testing subjects data file (`Part 4a) Test Subjects`) with 2947 rows and 1 column
+   - testing subjects data file (See `Part 4a) Test Subjects`) with 2947 rows and 1 column
    - into a long, single column data set with 10299 rows and 1 column.
 
 4. Perform a column-wise bind on the datasets from previous steps 
    - activities + subjects + measurement data
-   - into a rsulting data set with 10299 rows and 563 columns.
+   - into a resulting data set with 10299 rows and 563 columns.
 
 5. Since we are only interested in data involving mean and standard deviation measurements, 
    the data set is pared down to remove columns that we are not interested in.
+   - The pared down data set now has 10299 rows and 68 columns.
 
 6. Rows in the reduced data set is then updated with appropriate labels for the activities.
 
 7. Column headings involving features are also updated with more user-friendly descriptions.
+
+<small>On hindsight, it would be more optimized to pare down the measurement data set before performing the column bind.</small>
 
 As a final step, another independent tidy data set is created with the average of each variable for each activity and each subject.
