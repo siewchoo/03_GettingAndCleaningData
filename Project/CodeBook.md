@@ -1,4 +1,5 @@
-##Data Set Code Book: 
+Data Set Code Book: 
+==================
 Human Activity Recognition Using Smartphones
 
 Codebook Version 1.0
@@ -12,10 +13,11 @@ The downloaded 'getdata-projectfiles-UCI HAR Dataset.zip' file when unzipped con
 
 1. 1 folder for the training data
 2. 1 folder for the test data
-3. 3 text files<br/>
-	(a) features.txt<br/>
-	(b) features_info.txt<br/> 
-	(c) README.txt<br/>
+3. 4 text files<br/>
+	(a) activity_labels.txt
+	(b) features.txt<br/>
+	(c) features_info.txt<br/> 
+	(d) README.txt<br/>
 
 Disclaimer:<br/>
 The above dataset is distributed AS-IS and no responsibility implied or explicit can be addressed to the authors or their institutions for its use or misuse. Any commercial use is prohibited.

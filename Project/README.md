@@ -1,5 +1,5 @@
-### Introduction
-
+Introduction
+============
 There are 6 components to this project. They are:
 
 1. getdata-projectfiles-UCI HAR Dataset.zip
@@ -41,10 +41,9 @@ The first 3 components are required for the core work. Their relationship can be
 		<td align='center'>(Output)</td>
 	</tr>
 </table>
-<br/>
 
 The following 2 components - CodeBook.md and README.md are supporting reference documents.<br/>
-The last component, a Github repo, will cater to further enhancement work on this project.
+The last component, a Github repo, will cater to further enhancement work on this project.<br/>
 
 
 Cleaning the Data
@@ -67,7 +66,7 @@ Steps:
 2. In the application, change the working directory to where your script is residing.
 
 3. Source run_analysis.R to start the data cleaning process.
-   - In R Console, enter the following command:
+   - In R Console, enter the following command:<br/>
 		`source("run_analysis.R")`
    - In RStudio, just click on the "Source" button.
 
