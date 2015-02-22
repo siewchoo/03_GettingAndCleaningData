@@ -13,10 +13,9 @@ The downloaded 'getdata-projectfiles-UCI HAR Dataset.zip' file when unzipped con
 1. 1 folder for the training data
 2. 1 folder for the test data
 3. 3 text files 
-
-	a) features.txt
-	b) features_info.txt 
-	c) README.txt
+	a. features.txt
+	b. features_info.txt 
+	c. README.txt
 
 Disclaimer:
 The above dataset is distributed AS-IS and no responsibility implied or explicit can be addressed to the authors or their institutions for its use or misuse. Any commercial use is prohibited.
